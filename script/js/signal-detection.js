@@ -21,9 +21,9 @@ function runTrial() {
 
 window.onload = function () {
     var noiseSlider = document.getElementById("noise-slider");
-    updateColors((1 - (noiseSlider.value / 100)) * 100);
+    updateColors(((noiseSlider.value / 100)) * 100);
     noiseSlider.addEventListener("input", function (e) {
-        updateColors((1 - (e.target.value / 100)) * 100);
+        updateColors(((e.target.value / 100)) * 100);
     });
     document.getElementById("start-button").addEventListener("click", runTrial);
 };
