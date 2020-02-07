@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signal Detection Theory</title>
+
+    <link rel="stylesheet" href="style/signal-detection.css"/>
+</head>
+<body>
+    <h1>Signal Detection Theory Demo</h1>
+    <div id="content-container">
+        <div id="stimulus-container"><div id="stimulus"></div></div>
+    </div>
+    <div id="control-container">
+        <button id="start-button">Run Trial</button>
+        <div id="noise-container">
+            <div class="slidecontainer">
+                <label class="input-label" for="noise-slider">
+                    Noise
+                </label>
+                <input type="range" min="1" max="99" value="10" class="noise-slider" id="noise-slider">
+            </div>
+            <div id="example-container">
+                <div id="exampleA" class="stimulus-example">A</div>
+                <div id="exampleB" class="stimulus-example">B</div>
+            </div>
+        </div>
+        <div id="prob-container">
+            <label class="input-label" for="prob-slider">
+                Probability of A vs. B
+            </label>
+            <div class="slide-container">
+                <span>A</span>
+                <input type="range" min="1" max="99" value="50" class="noise-slider" id="prob-slider">
+                <span>B</span>
+            </div>
+        </div>
+
+    </div>
+    <script src="script/js/signal-detection.js"></script>
+</body>
+</html>

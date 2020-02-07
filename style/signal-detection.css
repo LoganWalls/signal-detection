@@ -1,0 +1,92 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    padding: 1em;
+}
+
+.input-label{
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.noise-slider {
+    -webkit-appearance: none;
+    width: 16em;
+    height: 12px;
+    border-radius: 16px;
+    background: #ccc;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-bottom: 1em;
+}
+
+.noise-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+}
+
+.noise-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+}
+
+#start-button{
+    width: 5em;
+    height: 3em;
+    border-radius: 12px;
+    margin-bottom: 1em;
+}
+
+#content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stimulus{
+    width: 10em;
+    height: 10em;
+    border-radius: 100px;
+    background-color: unset;
+    opacity: 1;
+}
+
+#noise-container, #control-container, #prob-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.slide-container{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+#example-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.stimulus-example{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 2em;
+    border-radius: 50px;
+    margin: 0.2em;
+}
