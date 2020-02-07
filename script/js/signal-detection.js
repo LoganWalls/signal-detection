@@ -10,7 +10,7 @@ function updateColors(hueDifference) {
 function runTrial() {
     var stimulus = document.getElementById("stimulus");
     var probSlider = document.getElementById("prob-slider");
-    var choice = Math.random() < probSlider.value / 100 ? "A" : "B";
+    var choice = Math.random() > probSlider.value / 100 ? "A" : "B";
     console.log(choice);
     stimulus.style.backgroundColor = document.getElementById("example" + choice).style.backgroundColor;
     stimulus.style.opacity = 1;
